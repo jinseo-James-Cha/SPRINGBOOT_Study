@@ -1,5 +1,6 @@
 package com.chap2.book.springboot.domain.posts;
 
+import com.chap2.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter // 필드의 모든 getter method생성, lombok annotation, optional
 @NoArgsConstructor // 기본생성자추가, lombot annotation, optional
 @Entity // JPA annotation, mandatory
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // 테이블의 PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment 적용
