@@ -31,4 +31,10 @@ public class Posts {
         this.author = author;
     }
 
+    // 더티 체킹을 위한 값 변경 메소드
+    public void update(String title, String content){
+        this.title = title;
+        this.content = content;
+    }
+
 }
