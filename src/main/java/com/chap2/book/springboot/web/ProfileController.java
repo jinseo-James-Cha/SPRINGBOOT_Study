@@ -1,7 +1,7 @@
 package com.chap2.book.springboot.web;
 
 import lombok.RequiredArgsConstructor;
-import org.hibernate.cfg.Environment;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
